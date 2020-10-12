@@ -1,0 +1,156 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	overflow-x: hidden;
+}
+
+/*html, body {
+  height: 100%;
+}*/
+.product {
+	text-decoration: none;
+	background: #eee;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
+		sans-serif;
+}
+
+.product .wrap {
+	height: 100%;
+}
+
+.product .card {
+	display: -webkit-box;
+	-webkit-box-flex: 0;
+	flex: 0 0 auto;
+	background: #fff;
+	max-width: 700px;
+	margin: 25px 0;
+	border-radius: 5px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.product .card-pic-wrap {
+	height: 12em;
+	background: #d1e6fd;
+}
+
+.product img {
+	margin-top: -2em;
+	height: 21em;
+	width: 21em;
+}
+
+.product .card-pic-wrap img {
+	position: absolute;
+	bottom: 1em;
+	left: 77%;
+	margin-left: -175px;
+	width: 350px;
+	-webkit-box-reflect: below -1px -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(transparent),
+			color-stop(90%, transparent),
+			to(rgba(250, 250, 250, 0.15))
+		);
+	width: 12em;
+	height: 12em;
+}
+
+
+.product h3 {
+	font-family: 'Khand', sans-serif !important;
+    font-weight: bold;
+    margin-bottom: 0.51em;
+    margin-top: 1.22em;
+}
+
+.product a {
+	background: #4b2507;
+	color: #fff;
+	padding: 0 25px;
+	height: 50px;
+	font-size: 0.8em;
+	letter-spacing: 1px;
+	line-height: 50px;
+	display: inline-block;
+	border-radius: 25px;
+	text-decoration: none;
+	margin-top: 1.5em;
+	text-transform: uppercase;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.product a:hover {
+	background: #70a751;
+}
+
+@media (max-width: 790px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	.product .wrap {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.product .card {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		flex-direction: column;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.product .card-pic-wrap {
+		width: 100%;
+		border-radius: 5px 5px 0 0;
+	}
+	.product .card-pic-wrap img {
+		bottom: 20px;
+		position: relative;
+	}
+
+	.product .card-content {
+		padding: 2em 2em 1em;
+	}
+}
+
+
+/* pagination css starts */
+.pagination .fa{
+	color: orange;
+}
+.pagination .fa:hover{
+	color: orange;
+}
+
+.page-item{
+	border-radius: 50% !important;
+	outline: 0;
+	color: #4b2507 !important;
+	-webkit-border-radius: 50% !important;
+	-moz-border-radius: 50% !important;
+	-ms-border-radius: 50% !important;
+	-o-border-radius: 50% !important;
+}
+.page-link{
+	border: none !important;
+}
+.page-item.active .page-link{
+	color: white !important;
+	background-color: orange !important;
+}

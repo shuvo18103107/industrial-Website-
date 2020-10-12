@@ -1,0 +1,76 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+
+/*Portfolio CSS Start*/
+
+.portfolio {
+    background-image: url(images/portfolio_bg.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    height: 1055px;
+    position: relative;
+    -webkit-clip-path: polygon(0 10%, 100% 3%, 100% 92%, 0 100%);
+    clip-path: polygon(0 10%, 100% 3%, 100% 92%, 0 100%);
+}
+
+.portfolio .portfolio_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 100px;
+}
+
+.portfolio_content {
+    padding-top: 50px;
+}
+
+.portfolio_content .portfolio_image .p_img {
+    margin-bottom: 30px;
+}
+
+.portfolio_content .portfolio_image {
+    display: inline-block;
+    position: relative;
+}
+
+.portfolio_content .portfolio_image .portfolio_image_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .3s linear;
+    opacity: 0;
+}
+
+.portfolio_content .portfolio_image:hover .portfolio_image_overlay {
+    height: 100%;
+    opacity: 1;
+}
+
+.portfolio_content .portfolio_image .portfolio_image_overlay i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 40px;
+    background: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #353535;
+}

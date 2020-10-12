@@ -1,0 +1,55 @@
+/* animated svg section with inline css */
+
+.icon-wrap svg {
+  width: calc(25% - -14em);
+  padding: 10px;
+}
+
+.icon-wrap-services {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 740px) {
+  .icon-wrap svg {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 500px) {
+  .icon-wrap svg {
+    width: calc(100% - 20px);
+  }
+}
+
+.icon-support .gear-s,
+.icon-support .gear-m {
+  animation: rotate;
+  animation-duration: 6s;
+}
+
+.icon-support .gear-b {
+  animation: rotate-reverse 6s;
+}
+
+.icon-support .clock {
+  transform-origin: 223.6px 132.8px;
+  animation: rotate 12s linear infinite;
+}
+
+.icon-support .hover {
+
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes rotate-reverse {
+  to {
+    transform: rotate(-1turn);
+  }
+}

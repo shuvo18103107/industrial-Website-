@@ -1,0 +1,252 @@
+@import "https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,700&family=Source+Sans+Pro&family=Ubuntu&display=swap";
+
+
+
+.initial{
+	/* border-radius: 12px; */
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+}
+
+*{
+	border: 0;
+	margin: 0;
+	outline: 0;
+	
+}
+
+#navbar {
+	position: fixed;
+	top: 0;
+	transition: top 0.3s;
+	-webkit-transition: top 0.3s;
+	-moz-transition: top 0.3s;
+	-ms-transition: top 0.3s;
+	-o-transition: top 0.3s;
+}
+
+.header_bg_fixed {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: rgba(45, 47, 49, 0.8);
+	transition: all .3s linear;
+	margin-top: 1.3em;
+    /* transition: margin 0.3s; */
+    transition-delay: 1s;
+}
+
+
+/*Menu Fixed CSS End*/
+
+
+.header {
+	padding-top: 40px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	z-index: 99;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+}
+
+.header_bg {
+	width: 100%;
+    background-color: rgba(4, 22, 31, 0.9);
+    transition: all 0.3s linear;
+}
+
+.header .navbar-brand i {
+	color: #ff7d15;
+	margin-left: 3px;
+	font-size: 18px;
+}
+
+.header .navbar-brand h5 {
+	color: white;
+	font-family: 'Exo 2', sans-serif;
+
+	font-size: 14px;
+}
+
+.header .navbar-brand h5 span {
+	margin-left: 3px;
+}
+
+.header .nav-item {
+	padding: 0px 4px;
+	position: relative;
+	align-self: flex-end;
+}
+
+.header .nav-link {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 469px;
+	text-transform: uppercase;
+	transition: all 0.2s linear;
+	padding: 0;
+	position: relative;
+}
+
+.nav-link:before {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -2px;
+	height: 0px;
+	width: 0px;
+	/* border-top: 2px solid #FF7D15;
+	border-left: 2px solid #FF7D15; */
+	background-color: transparent;
+	opacity: 0;
+	transition: all 0.5s linear;
+}
+
+ .nav-link:hover::before {
+	height: 15px;
+	width: 15px;
+	opacity: 1;
+}
+
+ .nav-link:after {
+	content: '';
+	position: absolute;
+	right: 9px;
+	bottom: -2px;
+	height: 0px;
+	width: 0px;
+	/* border-right: 2px solid #FF7D15; */
+	border-bottom: 2px solid #ff7d15;
+	background-color: transparent;
+	opacity: 0;
+	transition: all 0.5s linear;
+}
+
+ .nav-link:hover::after {
+	height: 15px;
+	width: 15px;
+	opacity: 1;
+}
+
+ .nav-link:hover {
+	color: #ff7d15;
+}
+
+ .nav-link.active:before {
+	content: '';
+	height: 155px;
+	opacity: 0;
+	position: absolute;
+	top: -50px;
+	transform: rotate(35deg);
+	width: 50px;
+	transition: all 3000ms cubic-bezier(0.19, 1, 0.22, 1);
+	-webkit-transform: rotate(35deg);
+	-moz-transform: rotate(35deg);
+	-ms-transform: rotate(35deg);
+	-o-transform: rotate(35deg);
+}
+
+ .nav-link.active:after {
+	opacity: 1;
+	height: 15px;
+	width: 15px;
+}
+
+ .nav-link.active {
+	color: #ff7d15;
+}
+
+
+
+/*Header CSS End*/
+
+
+/* dropdown css */
+  
+  .navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	/* text-align: center; */
+	padding: 14px 16px;
+	text-decoration: none;
+	}
+  
+  .dropdown-content {
+	display: none;
+	text-align: center;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 6em;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	}
+  
+  .dropdown-content a {
+	float: none;
+	color: ghostwhite;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	}
+  
+  
+  .dropdown:hover .dropdown-content {
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #ff7d15;
+	display: block;
+	background: rgba(6, 44, 82, 0.8);
+  }
+
+   .dropdown-content a:hover{
+	color: #ff7d15;
+	display: block;
+	background: rgba(6, 44, 82, 0.8);
+	top: -23em;
+	}
+
+.header .fa{
+	color: white;
+}
+  /* media queries */
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 1px) and (max-width: 992px){ 
+
+	.navbar-brand{
+		width: calc(100% - 72px);
+	}
+
+	.dropdown-content {
+		right: calc(100% - -0em);
+		top: calc(100% - 10em);
+	}
+	.dropdown-content a {
+		color: ghostwhite;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: center;
+		font-size: 12px;
+		right: 10em;
+		}
+
+	.dropdown{
+		width: calc(100% - 72px);
+		display: flex;
+	}
+	.navbar-nav{
+		float: right;
+	}
+}

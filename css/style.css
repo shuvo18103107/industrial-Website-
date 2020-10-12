@@ -1,0 +1,375 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+.pagination {
+    display: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a,
+a:focus,
+a:hover {
+    outline: 0;
+    text-decoration: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+li {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: auto;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+/*End of Common CSS*/
+
+
+/*Header CSS Start*/
+
+
+/* fav-icons */
+
+
+/* fav-icon ends */
+
+
+/* service part starts*/
+
+.service a {
+    color: black;
+}
+
+.service {
+    padding-top: 112px;
+}
+
+.sectionHeaders {
+    text-align: center;
+    position: relative;
+    font-size: 3vw;
+    -webkit-animation-name: clip-text;
+    animation-name: clip-text;
+    color: rgb(36, 31, 31);
+    cursor: default;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/*Body2 start*/
+
+.body2 {
+    padding-bottom: 10px;
+    padding-top: 50px;
+    margin-bottom: 23px;
+}
+
+.body2 p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #5b646e;
+}
+
+
+/*Body2 End*/
+
+
+/*Body3 Start*/
+
+.body3 .body3c1 {
+    width: 33.3%;
+    float: left;
+    /* padding-left: 1%; */
+}
+
+.body3 .body3c2 {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+.body3 .body3c3 {
+    width: 33.3%;
+    float: left;
+    /* padding-right: 1%; */
+}
+
+.clr {
+    clear: both;
+}
+
+.besdiePhone {
+    border-radius: 5px;
+    padding: 56px 0;
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 1px 0px rgba(62, 62, 62, 0.45);
+    transition: all 150ms ease-in-out;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.besdiePhone:hover {
+    top: -3px;
+    left: -3px;
+    box-shadow: 3px 3px 15px 0px rgba(82, 82, 82, 0.85);
+    background-color: rgba(28, 52, 129, 0.4);
+    background: url(../images/circle_hover.svg);
+    background-position-x: 320px;
+    transition-duration: 0.5s;
+    border-color: darkgray;
+    cursor: pointer;
+}
+
+.besdiePhone:hover i,
+.besdiePhone:hover p {
+    color: black;
+}
+
+.phnc1 {
+    width: 20%;
+    float: left;
+}
+
+.phnc1 i {
+    color: #c7c6c7;
+    font-size: 5vh;
+    padding-left: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+}
+
+.phnc2 {
+    width: 80%;
+    float: left;
+}
+
+.phnc2 h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.phnc2 p {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    color: #7e7d7e;
+    width: 90%;
+}
+
+
+/*Body3 End*/
+
+
+/* service part ends */
+
+
+/* image css for about company section */
+
+.abtbutton {
+    font-family: 'Titillium Web', sans-serif !important;
+    border-radius: 6px;
+    border: 2px solid #ff7d15;
+    /* background: #ff7d15; */
+    padding: 7px;
+    transition: ease-in;
+    text-transform: capitalize;
+    margin-top: 23px;
+    color: black;
+    text-align: center;
+}
+
+.abtbutton:hover {
+    color: white;
+    transition: ease-in;
+    border: 2px solid #ff7d15;
+    background: #ff7d15;
+    -webkit-transition: ease-in;
+    -moz-transition: ease-in;
+    -ms-transition: ease-in;
+    -o-transition: ease-in;
+}
+
+.snip1298 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    /* width: 58em; */
+    /* max-width: 84em; */
+    /* width: 100%; */
+    background: #ffffff;
+    color: #ffffff;
+    text-align: left;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.snip1298 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out;
+}
+
+.snip1298 img {
+    min-width: 100%;
+    vertical-align: top;
+}
+
+.snip1298 i {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    font-size: 28px;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    z-index: 1;
+    text-align: center;
+}
+
+.vertical-part b {
+    font-family: 'Titillium Web', sans-serif !important;
+}
+
+.snip1298 figcaption {
+    font-family: 'Titillium Web', sans-serif !important;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    padding: 20px;
+    z-index: 1;
+    max-width: 250px;
+}
+
+.snip1298 h3,
+.snip1298 p {
+    opacity: 0;
+    margin: 0 0 5px;
+}
+
+.snip1298 h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+    -webkit-transform: translateX(-40px);
+    transform: translateX(-40px);
+}
+
+.snip1298 h3 span {
+    font-weight: 800;
+}
+
+.snip1298 p {
+    font-size: 0.9em;
+    font-size: 500;
+    -webkit-transition-delay: 0;
+    transition-delay: 0;
+}
+
+.snip1298:after {
+    background: #962d22;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    content: '';
+    border-radius: 50%;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.snip1298 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.snip1298:hover img,
+.snip1298.hover img {
+    opacity: 0.4;
+}
+
+.snip1298:hover:after,
+.snip1298.hover:after {
+    -webkit-transform: scale(10);
+    transform: scale(10);
+    opacity: 0.75;
+}
+
+.snip1298:hover i,
+.snip1298.hover i {
+    -webkit-transform: scale(2) translate(10px, -10px);
+    transform: scale(2) translate(10px, -10px);
+    -moz-transform: scale(2) translate(10px, -10px);
+    -ms-transform: scale(2) translate(10px, -10px);
+    -o-transform: scale(2) translate(10px, -10px);
+}
+
+.snip1298:hover h3,
+.snip1298.hover h3 {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.snip1298:hover p,
+.snip1298.hover p {
+    opacity: 1;
+    -webkit-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+}
+
+
+/* about company section image css */
+
+.parallax {
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+}
